@@ -1,0 +1,81 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-image: url(world.jpg);
+font-family: sans-serif;
+}
+.menubar{
+background-color: #dcfffd;
+text-align: center;
+}
+.menubar ul{
+display: inline-flex;
+list-style: none;
+}
+.menubar ul li{
+ width: 149px;
+ margin: 7px;
+ padding: 13px;
+}
+.menubar ul li a{
+    text-decoration: none;
+color: #345511;
+    
+}
+.active, .menubar ul li:hover{
+    background-color: #fcff6c;
+    border-radius: 11px;
+    color: #21295c;
+}
+.menubar .fas{
+
+    margin-right: 7px;
+}
+.submenu1{
+display: none;
+
+}
+.menubar ul li:hover .submenu1{
+display: block;
+position: absolute;
+background-color: #dcfffd;
+margin-top: 13px;
+margin-left: -13px;
+font-size: 13px;
+}
+.menubar ul li:hover .submenu1 ul{
+    display: block;
+}
+.menubar ul li:hover .submenu1 ul li{
+width: 149px;
+padding: 11px;
+border-bottom: 2px dotted #345511;
+background: transparent;
+text-align: left;
+cursor: pointer;
+}
+.menubar ul li:hover .submenu1 ul li a:hover{
+color: #ad2e24;
+}
+.fa-caret-right{
+    font-size: 13px;
+    color: #345511;
+    float: right;
+}
+.submenu2{
+
+    display: none;
+}
+.hoverme:hover .submenu2{
+position: absolute;
+display: block;
+margin-top: -41px;
+margin-left: 139px;
+background: #dcfffd;
+
+}
+
+
